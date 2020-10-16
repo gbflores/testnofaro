@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Pets extends Model
+class Species extends Model
 {
     protected $fillable = [
-        'name_pet',
-        'id_specie'
+        'name_specie',
+        'status'
     ];
 }
