@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Attendances extends Model
 {
     protected $fillable = [
-        'data',
+        'date_attendance',
         'id_pet',
         'description',
         'status'

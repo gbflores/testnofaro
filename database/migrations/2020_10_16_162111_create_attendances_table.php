@@ -15,10 +15,10 @@ class CreateAttendancesTable extends Migration
     {
         Schema::create('attendances', function (Blueprint $table) {
             $table->id();
-            $table->data('date_attendance');
+            $table->date('date_attendance');
             $table->integer('id_pet');
-            $table->text('description');
-            $table->integer('status');
+            $table->text('description')->nullable();
+            $table->integer('status')->nullable();
             $table->timestamps();
         });
     }

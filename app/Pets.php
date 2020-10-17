@@ -10,4 +10,9 @@ class Pets extends Model
         'name_pet',
         'id_specie'
     ];
+
+    public function attendances()
+    {
+        return $this->hasMany('App\Models\Attendances');
+    }
 }

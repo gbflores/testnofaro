@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Pets;
+use App\Attendances;
 
 class PetsController extends Controller
 {
@@ -71,6 +72,14 @@ class PetsController extends Controller
      */
     public function destroy($id)
     {
+        $attendances = Attendances::all();
+
+        foreach ($attendances as $att) {
+            if($att['id_pet']==$id){
+                Attendances::destroy($att['id']);
+            }
+        }
+
         // deleta pet
         return Pets::destroy($id);
     }

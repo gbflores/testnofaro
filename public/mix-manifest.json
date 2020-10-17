@@ -1,0 +1,9 @@
+{
+    "/site/bootstrap.css": "/site/bootstrap.css",
+    "/site/jquery.js": "/site/jquery.js",
+    "/site/bootstrap.js": "/site/bootstrap.js",
+    "/site/datatables.css": "/site/datatables.css",
+    "/site/datatables.js": "/site/datatables.js",
+    "/site/jquery-confirm.css": "/site/jquery-confirm.css",
+    "/site/jquery-confirm.js": "/site/jquery-confirm.js"
+}

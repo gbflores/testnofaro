@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Attendances;
 
 class AttendancesController extends Controller
 {
@@ -27,7 +28,7 @@ class AttendancesController extends Controller
     {
         /// validação de dados de atendimento
         $request->validate([
-            'data'=>'required',
+            'date_attendance'=>'required',
             'id_pet'=>'required'
         ]);
 
